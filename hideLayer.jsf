@@ -1,0 +1,39 @@
+var layerList = fw.getDocumentDOM().topLayers;
+  // alert(layerList[0].elems[4].name);
+
+// masque le calque du bas
+// fw.getDocumentDOM().setLayerVisible(0, 0, false, false);
+
+// masque le 4iem calque en partant du bas !important > compte les sous calques
+fw.getDocumentDOM().setLayerVisible(4, 0, false, false);
+
+// for (var i = layerList.length - 1; i >= 0; i--) {
+//   // affiche les calques
+//   if(layerList[i].name == "Grid")
+//     alert(" calque n:" + i + " " + layerList[i].name)
+
+// };
+
+// fct OK affiche calques + sous-calques .name
+/*for (var i = layerList.length - 1; i >= 0; i--) {
+  // affiche les calques
+  alert(" calque n:" + i + " " + layerList[i].name);
+  for (var j = layerList[i].elems.length - 1; j >= 0; j--) {
+    // afiche le contenu des calques
+    alert(layerList[i].elems[j].name)
+  };
+};*/
+
+// for (var i = layerList[0].elems.length - 1; i >= 0; i--) {
+//   alert(layerList[0].elems[i].name + " i:" + i);
+// };
+
+//alert(layerList[1].elems[0].name);
+//fw.getDocumentDOM().layers.alertLayers
+//alert('hello')
+// fw.getDocumentDOM().setLayerVisible(13, -1, false, false);
+// alert('hey')
+
+// add new layer with prompt named
+// var layerName = prompt('layerName');
+// fw.getDocumentDOM().addNewLayer(layerName, false);
